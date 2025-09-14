@@ -24,7 +24,7 @@ export function AddReceptionDialog({ products, suppliers, children }: AddRecepti
   const [open, setOpen] = useState(false)
   const [loading, setLoading] = useState(false)
   const [formData, setFormData] = useState({
-    reception_date: new Date().toISOString().slice(0, 16), // Format for datetime-local input
+    reception_date: new Date().toISOString().slice(0, 16),
     product_id: "",
     supplier_id: "",
     invoice_number: "",

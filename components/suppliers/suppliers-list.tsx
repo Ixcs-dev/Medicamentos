@@ -106,7 +106,6 @@ export function SuppliersList({ suppliers }: SuppliersListProps) {
                       try {
                         activities = JSON.parse(supplier.economic_activity)
                       } catch {
-                        // If parsing fails, treat as single activity
                         activities = supplier.economic_activity ? [supplier.economic_activity] : []
                       }
                     } else if (Array.isArray(supplier.economic_activity)) {

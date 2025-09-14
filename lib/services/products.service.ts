@@ -2,7 +2,6 @@ import { createClient } from "@/lib/supabase/client"
 import { createClient as createServerClient } from "@/lib/supabase/server"
 import type { Product } from "@/lib/types"
 
-// Client-side service
 export class ProductsService {
   private supabase = createClient()
 
@@ -50,7 +49,6 @@ export class ProductsService {
   }
 }
 
-// Server-side service
 export class ProductsServerService {
   private async getSupabase() {
     return await createServerClient()
