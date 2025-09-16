@@ -38,7 +38,6 @@ export interface ProductReception {
   notes?: string
   created_at: string
   updated_at: string
-  // Relations
   product?: Product
   supplier?: Supplier
 }
